@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Fitness Equipment and Accessories
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Fitness Equipment and Accessories project! This application is designed to provide users with a seamless experience in browsing and purchasing fitness equipment and accessories.
 
-Currently, two official plugins are available:
+## Live URL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can access the live application here: [Fitness Equipment and Accessories](https://assignment4-client.vercel.app)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Product Details Page**: Displays product information such as name, price, stock quantity, description, images, and category.
+- **Cart Page**: Lists products added to the cart with controls to manage quantities, remove products, and proceed to checkout.
+- **Checkout Page**: Collects user details and supports multiple payment methods.
+- **Real-time Data Fetching**: Implements real-time data fetching using tagtype on the base API.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Frontend Development
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **React** ⚛️
+- **Redux** 🌀
+
+### Backend Development
+
+- **Node.js** 🟢
+- **Express.js** 🌐
+- **Mongoose** 🍃
+- **TypeScript** 📘
+
+## Getting Started
+
+Follow these instructions to set up the project on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/fitness-equipment-and-accessories.git
+   cd fitness-equipment-and-accessories
