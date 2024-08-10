@@ -53,15 +53,25 @@ const MobileNavbar = () => {
                     Product Management
                 </NavLink>
             </ol>
+            <ol>
+                <NavLink
+                    to="/about"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "underline text-[#3C43D1]" : ""
+                    }
+                >
+                    About
+                </NavLink>
+            </ol>
         </>
     );
 
     return (
-        <nav className="bg-white shadow-md  md:hidden">
+        <nav className="bg-white shadow-md  lg:hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                    
-                    <div className="flex md:hidden">
+                    <div className="flex lg:hidden">
                         <button
                             onClick={toggleMenu}
                             type="button"
@@ -100,14 +110,14 @@ const MobileNavbar = () => {
                                 />
                             </svg>
                         </button>
-                     <div className='h-6 w-20 ml-36'>
+                     <div className='h-6 w-20 ml-36 md:ml-60'>
                      <img src="https://welldone.axiomthemes.com/wp-content/uploads/2024/04/logo-3.png" alt="" />
                      </div>
                     </div>
                 </div>
             </div>
 
-            <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`} id="mobile-menu">
+            <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden`} id="mobile-menu">
                 <div className="px-2 pt-2 pb-3 space-y-1 mx-auto sm:px-3">
                     {NavLinks}
                 </div>

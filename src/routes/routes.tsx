@@ -11,6 +11,7 @@ import CheckoutPage from '../components/Ui/CheckoutPage.js'
 import CategoryProduct from "../components/Ui/CategoryProduct.js";
 import ExerciseBikes from "../components/shared/ExerciseBikes.js";
 import WeightPlates from "../components/shared/WeightPlates.js";
+import About from "../pages/About/About"
 
 
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path:'/myCart',
                 element: <MyCart/>
+            },
+            {
+                path:'/about',
+                element: <About/>
             },
             {
                 path:'/success',

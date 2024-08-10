@@ -8,7 +8,9 @@ const MainLayout = () => {
       <div className='lg:block hidden'>
       <Navbar/>
       </div>
+      <div>
       <MobileNavbar/>
+      </div>
       <Outlet/>
       <Footer/>
     </div>

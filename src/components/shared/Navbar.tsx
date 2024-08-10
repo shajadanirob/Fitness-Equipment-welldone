@@ -47,6 +47,16 @@ const Navbar: React.FC = () => {
           Product Management
         </NavLink>
       </ol>
+      <ol>
+        <NavLink
+          to="/about"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-[#3C43D1]" : ""
+          }
+        >
+          About
+        </NavLink>
+      </ol>
     </>
   );
 
